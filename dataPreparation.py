@@ -253,7 +253,7 @@ class DataPrep():
         bad=[]
         
         for i in range(len(correlation_coeff)):
-            if cc.loc['Laeq po korekcie w dB'][i] < 0.1 and cc.loc['Laeq po korekcie w dB'][i] > -0.1 or cc.loc['Laeq po korekcie w dB'][i] == float('nan'):
+            if cc.loc['Laeq po korekcie w dB'][i] < 0.2 and cc.loc['Laeq po korekcie w dB'][i] > -0.2 or cc.loc['Laeq po korekcie w dB'][i] == float('nan'):
                 bad.append(df.columns[i])
             
         for k in bad:        
