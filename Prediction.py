@@ -11,7 +11,7 @@ import time
 
 
 
-class Learning():
+class LearningUtils():
    
     def load_and_prepare(filename):
     
@@ -42,7 +42,7 @@ class Learning():
 
 database_file = 'db1819.pkl'
 
-(X,Y) = Learning.load_and_prepare(database_file)
+(X,Y) = LearningUtils.load_and_prepare(database_file)
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.1,random_state = 12)
 
 
