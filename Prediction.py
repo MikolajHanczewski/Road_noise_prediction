@@ -13,6 +13,7 @@ import time
 
 class LearningUtils():
    
+    @staticmethod
     def load_and_prepare(filename):
     
         df = pd.read_pickle(filename)
